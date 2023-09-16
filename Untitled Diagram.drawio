@@ -1,9 +1,59 @@
-<mxfile host="app.diagrams.net" modified="2023-09-16T05:54:22.197Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" version="21.7.4" etag="h94Cb9Tov-dcc9vRmk8D" type="github">
+<mxfile host="app.diagrams.net" modified="2023-09-16T06:11:19.513Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="s5NTndPbFbihvj1tgaK5" version="21.7.4" type="github">
   <diagram name="Page-1" id="jpONstzaJR4itWun06IS">
-    <mxGraphModel>
+    <mxGraphModel dx="1050" dy="534" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="nuWZhAk7o9v8Y51idKwW-1" value="&lt;font face=&quot;Times New Roman&quot; style=&quot;font-size: 18px;&quot;&gt;Image Acquisition&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="350" y="30" width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="nuWZhAk7o9v8Y51idKwW-2" value="&lt;font face=&quot;Times New Roman&quot; style=&quot;font-size: 18px;&quot;&gt;Preprocessing&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="350" y="110" width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="nuWZhAk7o9v8Y51idKwW-3" value="&lt;font face=&quot;Times New Roman&quot; style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;Crop&amp;nbsp; [Matplotlib]&lt;/span&gt;&lt;br&gt;&lt;br&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;Gaussian Blur&amp;nbsp; [OpenCV]&lt;/span&gt;&lt;br&gt;&lt;br&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;Enhancement&amp;nbsp; [NumPy, OpenCV]&lt;/span&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="290" y="160" width="270" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="nuWZhAk7o9v8Y51idKwW-8" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="nuWZhAk7o9v8Y51idKwW-1" target="nuWZhAk7o9v8Y51idKwW-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="310" as="sourcePoint" />
+            <mxPoint x="450" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nuWZhAk7o9v8Y51idKwW-10" value="&lt;font face=&quot;Times New Roman&quot; style=&quot;font-size: 18px;&quot;&gt;Color Detection&amp;nbsp; [NumPy, OpenCV]&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="280" y="320" width="290" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="nuWZhAk7o9v8Y51idKwW-11" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="nuWZhAk7o9v8Y51idKwW-3" target="nuWZhAk7o9v8Y51idKwW-10">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="520" y="290" as="sourcePoint" />
+            <mxPoint x="570" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nuWZhAk7o9v8Y51idKwW-12" value="&lt;font face=&quot;Times New Roman&quot; style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;Grayscale&amp;nbsp;Conversion&amp;nbsp; [NumPy, OpenCV]&lt;/span&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="265" y="400" width="320" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="nuWZhAk7o9v8Y51idKwW-13" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="nuWZhAk7o9v8Y51idKwW-10" target="nuWZhAk7o9v8Y51idKwW-12">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="520" y="520" as="sourcePoint" />
+            <mxPoint x="570" y="470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nuWZhAk7o9v8Y51idKwW-14" value="&lt;font face=&quot;Times New Roman&quot; style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;Binary Image Conversion&amp;nbsp; [OpenCV]&lt;/span&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="265" y="490" width="320" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="nuWZhAk7o9v8Y51idKwW-15" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="nuWZhAk7o9v8Y51idKwW-12" target="nuWZhAk7o9v8Y51idKwW-14">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="500" y="510" as="sourcePoint" />
+            <mxPoint x="600" y="510" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nuWZhAk7o9v8Y51idKwW-16" value="Label" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" connectable="0" vertex="1" parent="nuWZhAk7o9v8Y51idKwW-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nuWZhAk7o9v8Y51idKwW-18" value="Thresholding" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="nuWZhAk7o9v8Y51idKwW-15">
+          <mxGeometry x="-0.0034" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
